@@ -1,0 +1,64 @@
+@import "./reset.css";
+@import "./main.css";
+@import "./chart.css";
+
+@media screen and (min-width: 450px) {
+  .mobile__screen {
+    display: none;
+  }
+
+  .pc__screen {
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    color: #fff;
+    font-size: 42px;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pc__screen p {
+    text-shadow: 3px 3px 2px #000;
+  }
+}
+
+@media screen and (max-width: 451px) {
+  .pc__screen {
+    display: none;
+  }
+
+  .mobile__screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .nav {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: 60px;
+
+    border: 1px solid #999;
+    border-radius: 10px;
+    background-color: #9879d9;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0px 15px;
+  }
+}

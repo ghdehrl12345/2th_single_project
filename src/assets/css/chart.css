@@ -1,0 +1,71 @@
+.cmain {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.ctop {
+  width: 150px;
+  height: 140px;
+
+  background-size: cover;
+
+  background-image: url("https://elo-boost.ru/wp-content/uploads/gallery_symbol/Top.png");
+
+  display: flex;
+  flex-direction: row;
+}
+
+.cjungle {
+  width: 150px;
+  height: 140px;
+
+  background-size: cover;
+
+  background-image: url("https://elo-boost.ru/wp-content/uploads/gallery_symbol/Jungle.png");
+
+  display: flex;
+  flex-direction: row;
+}
+
+.cmid {
+  width: 150px;
+  height: 140px;
+
+  background-size: cover;
+
+  background-image: url("https://elo-boost.ru/wp-content/uploads/gallery_symbol/Middle.png");
+
+  display: flex;
+  flex-direction: row;
+}
+
+.cbottom {
+  width: 150px;
+  height: 140px;
+
+  background-size: cover;
+
+  background-image: url("https://elo-boost.ru/wp-content/uploads/gallery_symbol/Bottom.png");
+
+  display: flex;
+  flex-direction: row;
+}
+
+.csupport {
+  width: 150px;
+  height: 140px;
+
+  background-size: cover;
+
+  background-image: url("https://elo-boost.ru/wp-content/uploads/gallery_symbol/Support.png");
+
+  display: flex;
+  flex-direction: row;
+}
+
+input {
+  border: none;
+}
