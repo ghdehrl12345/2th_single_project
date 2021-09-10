@@ -1,11 +1,17 @@
 extends ./base.pug
 
 block content
-    
-        section.m__page
-            div.top
-            div.mimg
-            div.bottom
+    section.mmain
+        section.mbox
+            section.login        
+                form(action="/login" method="post")
+                    div.loginLabel
+                        label ID 
+                        input(type="text" name="input_id")
+                    div.loginLabel
+                        label PASSWORD 
+                        input(type="password" name="input_pass")
+                    input(type="submit" value="LOGIN")
 
-            
-        
+                    div.signin
+                        a(href="/login/signin") signin

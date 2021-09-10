@@ -1,27 +1,34 @@
-import express from "express";
+const express = require("express");
 
-import {
-  chartcontroller,
-  rankcontroller,
-  maincontroller,
-  mypagecontroller,
-  topcontroller,
-  junglecontroller,
-  midcontroller,
-  bottomcontroller,
-  supportcontroller,
-} from "../controllers/globalController";
+const {
+  mainController,
+  chartController,
+  rankController,
+  mypageController,
+  topController,
+  jungleController,
+  midController,
+  bottomController,
+  supportController,
+  createsigninController,
+  loginController,
+  signinController,
+} = require("../controllers/globalController");
 
 const globalRouter = express.Router();
 
-globalRouter.get("/", maincontroller);
-globalRouter.get("/chart", chartcontroller);
-globalRouter.get("/rank", rankcontroller);
-globalRouter.get("/mypage", mypagecontroller);
-globalRouter.get("/champs/top", topcontroller);
-globalRouter.get("/champs/jungle", junglecontroller);
-globalRouter.get("/champs/mid", midcontroller);
-globalRouter.get("/champs/bottom", bottomcontroller);
-globalRouter.get("/champs/support", supportcontroller);
+globalRouter.get("/", mainController);
+globalRouter.get("/chart", chartController);
+globalRouter.get("/rank", rankController);
+globalRouter.get("/mypage", mypageController);
+globalRouter.get("/top", topController);
+globalRouter.get("/jungle", jungleController);
+globalRouter.get("/mid", midController);
+globalRouter.get("/bottom", bottomController);
+globalRouter.get("/support", supportController);
+globalRouter.get("/signin", createsigninController);
 
-export default globalRouter;
+globalRouter.post("/login", loginController);
+globalRouter.post("/signin", signinController);
+
+module.exports = globalRouter;

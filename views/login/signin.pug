@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        div.sibox
+            h1.signuplogo__h 회원가입
+        form(action="/signupPost" method="post")
+            h2.signuph 아이디 입력
+            div.signuploginLabel1
+                input(type="text" name="input_id" placeholder="ID")
+            h2.signuph 비밀번호 입력
+            div.signuploginLabel2
+                input(type="password" name="input_pass" placeholder="PASS")
+            div.signupbutton
+                input(type="submit" value="가입하기") 
+

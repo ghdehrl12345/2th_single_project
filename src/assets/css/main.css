@@ -1,11 +1,3 @@
-.box {
-  width: 100%;
-  height: 60px;
-
-  display: flex;
-  flex-direction: column;
-}
-
 .mheader {
   width: 100%;
   height: 50px;
@@ -14,48 +6,25 @@
   flex-direction: row;
 }
 
+.mbox {
+  width: 100%;
+  height: calc(100vh - 60px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(#304352, #d7d2cc);
+}
+
 .htitle {
   font-size: 30px;
   padding: 8px 35px;
-  color: #346;
+  color: #d7d2cc;
 
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-
-.himg {
-  width: 25%;
-  height: 50px;
-  background-image: url("https://www.anbmedia.com/wp/wp-content/uploads/2020/08/L.O.L.-Surprise-logo.jpg");
-
-  background-size: cover;
-
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.top {
-  width: 100%;
-  height: 100px;
-
-  background-color: #000;
-}
-
-.mimg {
-  width: 100%;
-  height: 500px;
-  background-image: url("https://cdn.epnc.co.kr/news/photo/201911/92733_83711_2650.jpg");
-  background-size: cover;
-
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.bottom {
-  width: 100%;
-  height: 120px;
-
-  background-color: #000;
 }
